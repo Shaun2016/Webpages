@@ -396,6 +396,7 @@ h6.shortcodes-caption{
 
 .newsletter-form{
 	display:table;
+	width: 100%;
 }
 
 .newsletter-form>*{
@@ -406,7 +407,7 @@ h6.shortcodes-caption{
 }
 
 .newsletter-form .newsletter-email{
-	width:63%;
+	width:90%;
 }
 
 .newsletter-form .newsletter-zip{
@@ -7357,7 +7358,6 @@ input.numeric-input:focus{
 		width:50px;
 		background:transparent;
 		cursor:pointer;
-		z-index: 100;
 	}
 	
 	
@@ -7532,10 +7532,6 @@ input.numeric-input:focus{
 	blockquote.align-left,
 	blockquote.align-center{
 		width:100%!important;
-	}
-	
-	.sidebar{
-		margin-top:20px;
 	}
 	
 	.sidebar .banner{
@@ -7992,4 +7988,22 @@ input.numeric-input:focus{
 
 .owl-wrapper-outer a.read-more-button{
 	margin: 8px 0px;
+}
+
+.col_news_list ul li {
+	list-style: none;
+}
+
+.col_news_list table td {
+	padding: 10px 0px 0px 0px;
+}
+
+.sidebar{
+	margin-top:20px;
+}
+
+/* 文章页 */
+.arti_title,
+.arti_metas {
+	text-align: center;
 }

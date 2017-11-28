@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<!-- Meta Tags -->
@@ -24,6 +24,9 @@
 
 		<style type="text/css">
 			.no-fouc {display:none;}
+			.newsList tr:first-child {
+				display: none;
+			}
 	  	</style>
 	  	<!-- jQuery -->
 		<script src="assets/js/jquery-1.11.0.min.js"></script>
@@ -107,9 +110,9 @@
 						
 						
 						<!-- Logo -->
-						<div id="logo" class="col-lg-3 col-md-3 col-sm-3">
+						<div id="logo" class="col-lg-3 col-md-3 col-sm-3" style="padding-top: 15px;">
 							
-							<a href="main-v1.html"><img src="assets/img/logo.png" alt="Logo"></a>
+							<a href="main-v1.html"><img src="logo.png" alt="College of Power and Energy Engineering"></a>
 							
 						</div>
 						<!-- /Logo -->
@@ -117,37 +120,38 @@
 						
 						
 						<!-- Main Quote -->
-						<div class="col-lg-5 col-md-4 col-sm-4">
+						<div class="col-lg-5 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
 							
-							<blockquote>Nam elit agna,enderit sit amet, tinciunt ac,<br>viverra sed, nulla..</blockquote>
+							<blockquote style="font-size: 20px;">academic excellence-pursuit of truth</blockquote>
 							
 						</div>
 						<!-- /Main Quote -->
 						
 						
 						
-						<!-- Newsletter -->
-						<div class="col-lg-4 col-md-5 col-sm-5">
+						<!-- Search -->
+						<div class="col-lg-3 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
 							
-							<form id="newsletter" action="php/newsletter-form.php" method="POST" frag="面板1">
+							<form id="newsletter" action="/_web/search/doSearch.do?locale=zh_CN&request_locale=zh_CN&_p=YXM9NzQmdD0yNDkmZD0xMDg2JnA9MSZtPVNOJg__" method="POST" onsubmit="return enableNewsletterForm(this);">
 								
-								<div class="newsletter-form" frag="窗口1">
+								<div class="form-content"><h5><strong>Search</strong> for pages</h5></div>
+								<div class="form-content"><div class="newsletter-form">
 								
-									<div class="newsletter-email" frag="窗口内容">
-										<input type="text" name="newsletter-email" placeholder="Search">
+									<div class="newsletter-email">
+										<input id="search-field" type="text" name="Keywords" placeholder="Please Enter Keywords">
 									</div>
 									
-									<div class="newsletter-submit">
-										<input type="submit" value="">
+									<div class="newsletter-submit" style="left: 5px;">
+										<input id="search-btn" type="submit" value="">
 										<i class="icons icon-right-thin"></i>
 									</div>
 									
-								</div>
+								</div></div>
 								
-							</form>
+							<div class="form-report"></div></form>
 							
 						</div>
-						<!-- /Newsletter -->
+						<!-- /Search -->
 						
 						
 						
@@ -252,19 +256,22 @@
 						<!-- /Blog Post -->		
 						<!-- Owl Carousel -->
 						<div class="col-md-12 col-sm-12 owl-carousel-list" frag="面板6">
-							<div class="owl-header">
-								<h3>Others</h3>
-							</div>
 							<!-- Owl Items -->
 							<div class="owl-carousel owl-theme" style="display: block;">
 								<div class="owl-wrapper-outer">
 									<div class="col-md-6 col-sm-12" frag="窗口8" style="padding-right: 5px">
+										<div class="owl-header">
+											<h3>Others</h3>
+										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>
 										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
 									</div>
 									<div class="col-md-6 col-sm-12" frag="窗口9">
+										<div class="owl-header">
+											<h3>Others</h3>
+										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>
@@ -273,12 +280,18 @@
 								</div>
 								<div class="owl-wrapper-outer">
 									<div class="col-md-6 col-sm-12" frag="窗口10" style="padding-right: 5px">
+										<div class="owl-header">
+											<h3>Others</h3>
+										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>
 										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
 									</div>
 									<div class="col-md-6 col-sm-12" frag="窗口11">
+										<div class="owl-header">
+											<h3>Others</h3>
+										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>

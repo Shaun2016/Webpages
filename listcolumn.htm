@@ -107,9 +107,9 @@
 						
 						
 						<!-- Logo -->
-						<div id="logo" class="col-lg-3 col-md-3 col-sm-3">
+						<div id="logo" class="col-lg-3 col-md-3 col-sm-3" style="padding-top: 15px;">
 							
-							<a href="main-v1.html"><img src="assets/img/logo.png" alt="Logo"></a>
+							<a href="main-v1.html"><img src="logo.png" alt="College of Power and Energy Engineering"></a>
 							
 						</div>
 						<!-- /Logo -->
@@ -117,37 +117,38 @@
 						
 						
 						<!-- Main Quote -->
-						<div class="col-lg-5 col-md-4 col-sm-4">
+						<div class="col-lg-5 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
 							
-							<blockquote>Nam elit agna,enderit sit amet, tinciunt ac,<br>viverra sed, nulla..</blockquote>
+							<blockquote style="font-size: 20px;">academic excellence-pursuit of truth</blockquote>
 							
 						</div>
 						<!-- /Main Quote -->
 						
 						
 						
-						<!-- Newsletter -->
-						<div class="col-lg-4 col-md-5 col-sm-5">
+						<!-- Search -->
+						<div class="col-lg-4 col-md-5 col-sm-5 col-lg-push-1 col-md-push-1">
 							
-							<form id="newsletter" action="php/newsletter-form.php" method="POST" frag="面板1">
+							<form id="newsletter" action="php/newsletter-form.php" method="POST">
 								
-								<div class="newsletter-form" frag="窗口1">
+								<div class="form-content"><h5><strong>Search</strong> for pages</h5></div>
+								<div class="form-content"><div class="newsletter-form">
 								
-									<div class="newsletter-email" frag="窗口内容">
-										<input type="text" name="newsletter-email" placeholder="Search">
+									<div class="newsletter-email">
+										<input id="search-field" type="text" name="Keywords" placeholder="Please Enter Keywords">
 									</div>
 									
 									<div class="newsletter-submit">
-										<input type="submit" value="">
+										<input id="search-btn" type="submit" value="">
 										<i class="icons icon-right-thin"></i>
 									</div>
 									
-								</div>
+								</div></div>
 								
-							</form>
+							<div class="form-report"></div></form>
 							
 						</div>
-						<!-- /Newsletter -->
+						<!-- /Search -->
 						
 						
 						
@@ -185,22 +186,40 @@
 			<!-- /Header -->
 
 			<!-- Content -->	
-			<section id="content">
+			<section id="content" style="min-height: 400px;">
 				<!-- Section list -->
-				<section class="section full-width-bg gray-bg">
+				<section class="section full-width-bg gray-bg" style="padding-top: 20px">
 					<div class="row">
-						<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
-							<div frag="面板3">
-								<div frag="窗口3">
-									<div frag="窗口内容">
-										<p class="breadcrumb">{当前位置}</p>
-										<h3 class="animate-onscroll no-margin-top">{栏目名称}</h3>
-									</div>
-
+						<!-- Sidebar 栏目列表 -->
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar" frag="面板4" style="left: 0px;">
+							<div class="banner-wrapper" frag="窗口5" portletmode="simpleColumnAnchor">
+								<div frag="窗口内容">位置栏目</div>
+							</div>
+							<div class="banner-wrapper" frag="窗口6" portletmode="simpleColumnList">
+								<div frag="窗口内容">
+									栏目列表
 								</div>
 							</div>
 						</div>
+						<!-- /Sidebar 栏目列表 -->
+						<div class="col-lg-9 col-md-9 col-sm-8" style="left: 0px;">
+							<div frag="面板3">
+								<div class="col_metas" frag="窗口3" portletmode="simpleColumnAttri">
+									<div frag="窗口内容">
+										<p class="col_path breadcrumb" align="right">{当前位置}</p>
+										<h3 class="col_title animate-onscroll no-margin-top">{栏目名称}</h3>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col_news_list" frag="窗口4" portletmode="simpleList">
+								<ul style="padding-left: 20px;">
+									<li>{标题} <span style="float: right; margin-right: 10px;">{发布时间}</span></li>
+								</ul>
+							</div>
+						</div>
 					</div>
+
 				</section>
 				<!-- /Section list -->
 			</section>
