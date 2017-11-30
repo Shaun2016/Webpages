@@ -11,21 +11,36 @@
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 		
 		<!-- Stylesheets -->
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/fontello.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/flexslider.css" rel="stylesheet" type="text/css">
-		<link href="assets/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/responsive-calendar.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/chosen.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/jackbox.min.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/fontello.css" rel="stylesheet" type="text/css">
+		<!--
+
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/responsive-calendar.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/chosen.css" rel="stylesheet" type="text/css">
+		<link href="/_upload/tpl/01/bc/444/template444/assets/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+		
+		-->
 
 		<style type="text/css">
 			.no-fouc {display:none;}
 			.newsList tr:first-child {
 				display: none;
+			}
+			#wechart {
+				display: hide;
+			}
+			a#hrbeu :hover {
+				color: #5191d4;
+			}
+			.sidebar-box td {
+				padding-left: 0px;
+			}
+			.sidebar-box h3 {
+				margin-bottom: 5px;
 			}
 	  	</style>
 	  	<!-- jQuery -->
@@ -112,7 +127,7 @@
 						<!-- Logo -->
 						<div id="logo" class="col-lg-3 col-md-3 col-sm-3" style="padding-top: 15px;">
 							
-							<a href="main-v1.html"><img src="logo.png" alt="College of Power and Energy Engineering"></a>
+							<a href="@V_URL[M:S124]"><img src="logo.png" alt="College of Power and Energy Engineering"></a>
 							
 						</div>
 						<!-- /Logo -->
@@ -122,7 +137,7 @@
 						<!-- Main Quote -->
 						<div class="col-lg-5 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
 							
-							<blockquote style="font-size: 20px;">academic excellence-pursuit of truth</blockquote>
+							<blockquote style="font-size: 20px;"><a id="hrbeu" href="hrbeu.edu.cn">academic excellence-pursuit of truth</a></blockquote>
 							
 						</div>
 						<!-- /Main Quote -->
@@ -221,7 +236,7 @@
 				
 					<div class="col-lg-9 col-md-9 col-sm-8 col-lg-push-3 col-md-push-3 col-sm-push-4">
 						
-						<h3 class="animate-onscroll no-margin-top" style="opacity: 1;margin-bottom: 10px">Latest news</h3>
+						<h3 class="animate-onscroll no-margin-top" style="opacity: 1;margin-bottom: 10px">College</h3>
 						
 												<!-- Blog Post -->
 						<div class="blog-post big animate-onscroll" frag="面板5" style="opacity: 1">
@@ -261,7 +276,7 @@
 								<div class="owl-wrapper-outer">
 									<div class="col-md-6 col-sm-12" frag="窗口8" style="padding-right: 5px">
 										<div class="owl-header">
-											<h3>Others</h3>
+											<h3>Research</h3>
 										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
@@ -270,27 +285,7 @@
 									</div>
 									<div class="col-md-6 col-sm-12" frag="窗口9">
 										<div class="owl-header">
-											<h3>Others</h3>
-										</div>
-										<div frag="窗口内容">
-											{标题} <span style="float: right;"> {发布时间} </span>
-										</div>
-										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
-									</div>
-								</div>
-								<div class="owl-wrapper-outer">
-									<div class="col-md-6 col-sm-12" frag="窗口10" style="padding-right: 5px">
-										<div class="owl-header">
-											<h3>Others</h3>
-										</div>
-										<div frag="窗口内容">
-											{标题} <span style="float: right;"> {发布时间} </span>
-										</div>
-										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
-									</div>
-									<div class="col-md-6 col-sm-12" frag="窗口11">
-										<div class="owl-header">
-											<h3>Others</h3>
+											<h3>Academic</h3>
 										</div>
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
@@ -307,31 +302,23 @@
 					<div class="col-lg-3 col-md-3 col-sm-4 col-lg-pull-9 col-md-pull-9 col-sm-pull-8 sidebar" frag="面板4">
 						<!-- 通知公告 -->
 						<div class="sidebar-box white animate-onscroll">
-							<h3>Upcoming Events</h3>
+							<h3>Institute</h3>
 							<!-- 窗口4 -->
 							<div frag="窗口4">
 								<div class="窗口内容">
 									<ul class="upcoming-events">
 										<!-- Event -->
 										<li>
-												<div class="date">
-													<span>
-														<span class="day">{发布时间(dd)}</span>
-														<span class="month">{发布时间(MM)}</span>
-													</span>
+											<div class="event-content">
+												<span style="font-size: 30px; font-weight: 600;">
+													{标题}
+												</span>
+												<div class="event-meta">
+													{简介}
 												</div>
-												
-												<div class="event-content">
-													<h6>
-													<a href="event-post-v2.html">{标题}</a>
-													</h6>
-													<div class="event-meta">
-														{简介}
-													</div>
-												</div>		
+											</div>		
 										</li>
 										<!-- /Event -->
-											
 									</ul>
 								</div>
 							</div>
@@ -342,28 +329,21 @@
 					<div class="col-lg-3 col-md-3 col-sm-4 col-lg-pull-9 col-md-pull-9 col-sm-pull-8 sidebar" frag="面板7">
 						<!-- 通知公告 -->
 						<div class="sidebar-box white animate-onscroll">
-							<h3>Upcoming Events</h3>
+							<h3>laboratory</h3>
 							<!-- 窗口4 -->
 							<div frag="窗口12">
 								<div class="窗口内容">
 									<ul class="upcoming-events">
 										<!-- Event -->
-										<li>
-												<div class="date">
-													<span>
-														<span class="day">{发布时间(dd)}</span>
-														<span class="month">{发布时间(MM)}</span>
-													</span>
+										<li>	
+											<div class="event-content">
+												<span style="font-size: 30px; font-weight: 600;">
+													{标题}
+												</span>
+												<div class="event-meta">
+													{简介}
 												</div>
-												
-												<div class="event-content">
-													<h6>
-													<a href="event-post-v2.html">{标题}</a>
-													</h6>
-													<div class="event-meta">
-														{简介}
-													</div>
-												</div>		
+											</div>		
 										</li>
 										<!-- /Event -->
 											
@@ -427,23 +407,13 @@ Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. 
 							
 						</div>
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
+						<div class="col-lg-5 col-md-5 col-sm-10 col-lg-push-2 col-md-push-1 animate-onscroll">
 							
-							<h4>Latest Tweets</h4>
-							
-							<div class="twitter-widget">
-                                
-							</div>
-							
-							<a href="#" class="button twitter-button">Follow us on twitter</a>
-							
+							<img id="seewc" src="assets/img/wechart.gif" alt="..." onmouseover="showWechar();" >	
+							<div id="wechart" onmouseout="hideWechart();" hidden>
+								<img src="assets/img/w.jpg" alt="">
+							</div>	
 						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
-							
-							<h4>Like us on facebook</h4>
-							
-							</div>
 						
 					</div>
 					
@@ -536,9 +506,6 @@ Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. 
 		<!-- MixItUp -->
 		<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
 		
-		<!-- JackBox -->
-		<script type="text/javascript" src="assets/js/jackbox-packed.min.js"></script>
-		
 		<!-- CloudZoom -->
 		<script type="text/javascript" src="assets/js/zoomsl-3.0.min.js"></script>
 		
@@ -556,6 +523,16 @@ Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. 
 				ul.width('100%');
 				ul.css('top','71px');
 			});
+
+			function showWechar() {
+				$('#seewc').hide();
+				$('#wechart').show();
+			}
+
+			function hideWechart() {
+				$('#wechart').hide();
+				$('#seewc').show();
+			}
 		</script>
 		
 	</body>
