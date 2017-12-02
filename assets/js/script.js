@@ -1414,13 +1414,6 @@ $(document).ready(function(){
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
 	/* AJAX Newsletter Form */
 	function enableNewsletterForm() {
 		var search_field = $('#search-field').val();
@@ -1436,3 +1429,20 @@ $(document).ready(function(){
 	
 	
 });
+
+
+$(function() {
+	var ul = $('.sub-nav');
+	ul.width('100%');
+	ul.css('top','71px');
+});
+
+function showWeChat() {
+	$('#seewc').hide();
+	$('#wechat').show();
+}
+
+function hideWeChat() {
+	$('#wechat').hide();
+	$('#seewc').show();
+}

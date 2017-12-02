@@ -11,38 +11,19 @@
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 		
 		<!-- Stylesheets -->
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/style.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/fontello.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/fontello.css" rel="stylesheet" type="text/css">
 		<!--
 
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/flexslider.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/responsive-calendar.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/chosen.css" rel="stylesheet" type="text/css">
-		<link href="/_upload/tpl/01/bc/444/template444/assets/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="assets/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/responsive-calendar.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/chosen.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/cloud-zoom.css" rel="stylesheet" type="text/css" />
 		
 		-->
-
-		<style type="text/css">
-			.no-fouc {display:none;}
-			.newsList tr:first-child {
-				display: none;
-			}
-			#wechart {
-				display: hide;
-			}
-			a#hrbeu :hover {
-				color: #5191d4;
-			}
-			.sidebar-box td {
-				padding-left: 0px;
-			}
-			.sidebar-box h3 {
-				margin-bottom: 5px;
-			}
-	  	</style>
 	  	<!-- jQuery -->
 		<script src="assets/js/jquery-1.11.0.min.js"></script>
 		<script src="assets/js/jquery-ui-1.10.4.min.js"></script>
@@ -137,7 +118,7 @@
 						<!-- Main Quote -->
 						<div class="col-lg-5 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
 							
-							<blockquote style="font-size: 20px;"><a id="hrbeu" href="hrbeu.edu.cn">academic excellence-pursuit of truth</a></blockquote>
+							<blockquote style="font-size: 20px;"><a id="hrbeu" href="http://www.hrbeu.edu.cn">academic excellence-pursuit of truth</a></blockquote>
 							
 						</div>
 						<!-- /Main Quote -->
@@ -145,7 +126,7 @@
 						
 						
 						<!-- Search -->
-						<div class="col-lg-3 col-md-4 col-sm-4 col-lg-push-1 col-md-push-1">
+						<div class="col-lg-3 col-md-3 col-sm-4 col-lg-push-1 col-md-push-1">
 							
 							<form id="newsletter" action="/_web/search/doSearch.do?locale=zh_CN&request_locale=zh_CN&_p=YXM9NzQmdD0yNDkmZD0xMDg2JnA9MSZtPVNOJg__" method="POST" onsubmit="return enableNewsletterForm(this);">
 								
@@ -153,7 +134,7 @@
 								<div class="form-content"><div class="newsletter-form">
 								
 									<div class="newsletter-email">
-										<input id="search-field" type="text" name="Keywords" placeholder="Please Enter Keywords">
+										<input id="search-field" type="text" name="keyword" placeholder="Please Enter Keywords">
 									</div>
 									
 									<div class="newsletter-submit" style="left: 5px;">
@@ -168,7 +149,11 @@
 						</div>
 						<!-- /Search -->
 						
-						
+						<!-- Chinese Web -->
+						<div class="col-md-1 col-md-push-1 col-sm-1">
+							<a id="toChinese" href="http://pnec.hrbeu.edu.cn/" style="float: left;">Chinese</a>
+						</div>
+						<!-- /Chinese Web -->
 						
 					</div>
 					
@@ -264,7 +249,7 @@
 									{发布时间}
 									</span>
 								</div>	
-								<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow" style="margin-top: 10px">Read More</a>
+								<a href="@V_URL[L:S124:C6207]" class="button read-more-button big button-arrow" style="margin-top: 10px">Read More</a>
 							</div>
 							
 						</div>
@@ -281,7 +266,7 @@
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>
-										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
+										<a href="@V_URL[L:S124:C6205]" class="button read-more-button big button-arrow">Read More</a>
 									</div>
 									<div class="col-md-6 col-sm-12" frag="窗口9">
 										<div class="owl-header">
@@ -290,7 +275,7 @@
 										<div frag="窗口内容">
 											{标题} <span style="float: right;"> {发布时间} </span>
 										</div>
-										<a href="blog-single-sidebar.html" class="button read-more-button big button-arrow">Read More</a>
+										<a href="@V_URL[L:S124:C6206]" class="button read-more-button big button-arrow">Read More</a>
 									</div>
 								</div>
 							</div>
@@ -310,12 +295,9 @@
 										<!-- Event -->
 										<li>
 											<div class="event-content">
-												<span style="font-size: 30px; font-weight: 600;">
+												<span style="font-size: 20px; font-weight: 600;">
 													{标题}
 												</span>
-												<div class="event-meta">
-													{简介}
-												</div>
 											</div>		
 										</li>
 										<!-- /Event -->
@@ -323,7 +305,7 @@
 								</div>
 							</div>
 							<!-- End of 窗口4 -->
-							<a href="#" class="button transparent button-arrow">More events</a>
+							<a href="@V_URL[L:S124:C6208]" class="button transparent button-arrow">More events</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-4 col-lg-pull-9 col-md-pull-9 col-sm-pull-8 sidebar" frag="面板7">
@@ -337,12 +319,9 @@
 										<!-- Event -->
 										<li>	
 											<div class="event-content">
-												<span style="font-size: 30px; font-weight: 600;">
+												<span style="font-size: 20px; font-weight: 600;">
 													{标题}
 												</span>
-												<div class="event-meta">
-													{简介}
-												</div>
 											</div>		
 										</li>
 										<!-- /Event -->
@@ -351,7 +330,7 @@
 								</div>
 							</div>
 							<!-- End of 窗口4 -->
-							<a href="#" class="button transparent button-arrow">More events</a>
+							<a href="@V_URL[L:S124:C6209]" class="button transparent button-arrow">More events</a>
 						</div>
 					</div>
 				</section>
@@ -366,51 +345,49 @@
 					
 					<div class="row">
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+						<div class="col-lg-5 col-md-5 col-sm-6 animate-onscroll">
 							
-							<h4>Text Widget</h4>
+							<h4>About</h4>
 							
-							<p>Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Vestibulum libero nisl, porta vel.<br><br>
-Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum.</p>
+							<p>college of Power and Energy Engineering is founded based on the marine power plant major of PLA Military Institute of Engineering and its predecessor is the No. 352 Teaching and Research Section belonging to the shipbuilding department of College of Naval Engineering. It is one of the colleges with the longest history and one of the main colleges in the shipping, ocean and nuclear fields.<br><br>College of Power and Energy Engineering has become an important base of cultivating experts in marine power fields after the development and construction of more than 60 years.</p>
 							
 						</div>
 						
 						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
 							
-							<h4>Campaign</h4>
+							<h4>Quick Links</h4>
 								
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 								
 								<ul class="menu">
-									<li><a href="#">About</a></li>
-									<li><a href="#">Issues</a></li>
-									<li><a href="#">Media</a></li>
-									<li><a href="#">Blog</a></li> 
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">Contact us</a></li>
+									<li><a href="@V_URL[L:S124:C6197]">Campus</a></li>
+									<li><a href="@V_URL[L:S124:C6198]">Academic</a></li>
+									<li><a href="@V_URL[L:S124:C6199]">News</a></li>
+									<li><a href="@V_URL[L:S124:C6200]">Scientific</a></li> 
+									<li><a href="@V_URL[L:S124:C6339]">College</a></li>
+									<li><a href="@V_URL[L:S124:C6340]">Others</a></li>
 								</ul>
 								
 							</div>
-							
+
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 								
 								<ul class="menu">
-									<li><a href="#">Email updates</a></li>
-									<li><a href="#">Find events</a></li>
-									<li><a href="#">Make calls</a></li>
-									<li><a href="#">Register to vote</a></li> 
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Volunteer</a></li>
+									<li><a href="@V_URL[L:S124:C6201]">Introduce</a></li>
+									<li><a href="@V_URL[L:S124:C6202]">History</a></li>
+									<li><a href="@V_URL[L:S124:C6208]">Institute</a></li>
+									<li><a href="@V_URL[L:S124:C6209]">Laboratory</a></li> 
+									<li><a href="@V_URL[L:S124:C6206]">Academic</a></li>
 								</ul>
 								
 							</div>
 							
 						</div>
 						
-						<div class="col-lg-5 col-md-5 col-sm-10 col-lg-push-2 col-md-push-1 animate-onscroll">
+						<div class="col-lg-4 col-md-4 col-sm-10 animate-onscroll">
 							
-							<img id="seewc" src="assets/img/wechart.gif" alt="..." onmouseover="showWechar();" >	
-							<div id="wechart" onmouseout="hideWechart();" hidden>
+							<img id="seewc" src="assets/img/wechat.gif" alt="..." onmouseover="showWeChat();" >	
+							<div id="wechat" onmouseout="hideWeChat();" hidden>
 								<img src="assets/img/w.jpg" alt="">
 							</div>	
 						</div>
@@ -434,29 +411,7 @@ Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. 
 							
 						</div>
 						
-						<div class="col-lg-8 col-md-8 col-sm-8 animate-onscroll">
-							
-							<div class="social-media">
-								<ul class="social-icons">
-									<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
-									<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
-									<li class="google"><a href="#" class="tooltip-ontop" title="Google Plus"><i class="icons icon-gplus"></i></a></li>
-									<li class="youtube"><a href="#" class="tooltip-ontop" title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
-									<li class="flickr"><a href="#" class="tooltip-ontop" title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
-									<li class="email"><a href="#" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
-								</ul>
-								<ul class="social-buttons">
-									<li>
-										
-									</li>
-									<li>
-										<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-									</li>
-									
-								</ul>
-							</div>
-							
-						</div>
+						
 						
 					</div>
 					
@@ -517,24 +472,6 @@ Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. 
 			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
 			<script type="text/javascript" src="js/script_ie.js"></script>
 		<![endif]-->
-		<script>
-			$(function() {
-				var ul = $('.sub-nav');
-				ul.width('100%');
-				ul.css('top','71px');
-			});
-
-			function showWechar() {
-				$('#seewc').hide();
-				$('#wechart').show();
-			}
-
-			function hideWechart() {
-				$('#wechart').hide();
-				$('#seewc').show();
-			}
-		</script>
-		
 	</body>
 
 </html>

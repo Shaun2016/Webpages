@@ -8001,7 +8001,23 @@ input.numeric-input:focus{
 .sidebar{
 	margin-bottom: 10px;
 }
-
+.no-fouc {display:none;}
+.newsList tr:first-child {
+	display: none;
+}
+#wechart {
+	display: hide;
+}
+.sidebar-box td {
+	padding-left: 0px;
+}
+.sidebar-box h3 {
+	margin-bottom: 5px;
+}
+a#hrbeu:hover,
+a#toChinese:hover {
+	color: #63b2f5;
+}
 /* 文章页 */
 .arti_title,
 .arti_metas {
